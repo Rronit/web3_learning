@@ -19,7 +19,6 @@ contract ItemManager{
         items[itemIndex]._state = SupplyChainState.Created;
         emit SupplyChainStep(itemIndex, uint(items[itemIndex]._state));
         itemIndex++;
-        
 
     }
     function triggerPayment(uint _itemIndex) public payable{
